@@ -46,10 +46,10 @@ familyMemberSchema.virtual('userInfo', {
 	localField: 'userId',   
 	foreignField: '_id',
 	justOne: true,
-});
+});  
 familyMemberSchema.set('toJSON', {
 	virtuals: true,
-	transform: function (doc, ret) {
+	transform: function (doc, ret) { 
 		// Merge userInfo fields into root if isUser is true and userInfo exists
 		if (ret.isUser && ret.userInfo) {
 			ret.name = ret.userInfo.name;
