@@ -2,10 +2,10 @@ import pkg from 'twilio';
 const { twiml } = pkg;
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import ScheduledCall from '../models/scheduledCallSummary.js';
-import User from '../models/User.js';
+import User from '../models/user.js';
 import twilioClient from '../config/twilio.js';
 import { scheduleNewCall } from '../jobs/callScheduler.js';
-import FamilyMember from '../models/FamilyMember.js';
+import FamilyMember from '../models/familyMember.js';
 import { cancelScheduledCall } from '../jobs/callScheduler.js';
 import { isValidISOStringDate } from '../utils/validationUtils.js';
 
