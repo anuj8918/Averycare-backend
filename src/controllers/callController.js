@@ -5,7 +5,7 @@ import ScheduledCall from '../models/scheduledCallSummary.js';
 import User from '../models/User.js';
 import twilioClient from '../config/twilio.js';
 import { scheduleNewCall } from '../jobs/callScheduler.js';
-import FamilyMember from '../models/familyMember.js';
+import FamilyMember from '../models/FamilyMember.js';
 import { cancelScheduledCall } from '../jobs/callScheduler.js';
 import { isValidISOStringDate } from '../utils/validationUtils.js';
 
