@@ -55,7 +55,7 @@ const userSchema = new mongoose.Schema(
 					trim: true,
 					lowercase: true,
 				},
-				member: {
+				member: {  
 					type: mongoose.Schema.Types.ObjectId,
 					ref: 'FamilyMember',
 					required: true,
